@@ -1,0 +1,17 @@
+List of the libraries to be used (to be updated accordingly):
+
+// Include standard headers
+#include <stdio.h>
+#include <stdlib.h>
+
+// Include GLEW. Always include it before gl.h and glfw.h, since it's a bit magic.
+#include <GL/glew.h>
+#include <GL/gl.h>
+#include <GL/glfw.h>
+
+// Include GLFW
+#include <GL/glfw3.h>
+
+// Include GLM
+#include <glm/glm.hpp>
+using namespace glm;
