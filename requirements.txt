@@ -15,3 +15,16 @@ List of the libraries to be used (to be updated accordingly):
 // Include GLM
 #include <glm/glm.hpp>
 using namespace glm;
+
+//Installing Qt Creator
+Open the command line and enter the following code:
+
+wget http://download.qt.io/official_releases/qt/5.9/5.9.0/qt-opensource-linux-x64-5.9.0.run
+
+Make the file executable via: chmod +x qt-opensource-linux-x64-5.9.0.run
+And install it by using: ./qt-opensource-linux-x64-5.9.0.run
+
+//Installing the packeges for OpenGL:
+
+sudo apt-get install mesa-common-dev
+sudo apt-get install freeglut3-dev
