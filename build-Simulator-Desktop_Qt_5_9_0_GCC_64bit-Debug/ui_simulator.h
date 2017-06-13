@@ -15,6 +15,7 @@
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QOpenGLWidget>
@@ -44,6 +45,9 @@ public:
     QLabel *label_2;
     QLabel *label_3;
     QLabel *label_4;
+    QListWidget *listWidget;
+    QLabel *label_5;
+    QLabel *label_6;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -98,6 +102,20 @@ public:
         label_4 = new QLabel(centralWidget);
         label_4->setObjectName(QStringLiteral("label_4"));
         label_4->setGeometry(QRect(670, 310, 31, 17));
+        listWidget = new QListWidget(centralWidget);
+        new QListWidgetItem(listWidget);
+        new QListWidgetItem(listWidget);
+        new QListWidgetItem(listWidget);
+        new QListWidgetItem(listWidget);
+        new QListWidgetItem(listWidget);
+        listWidget->setObjectName(QStringLiteral("listWidget"));
+        listWidget->setGeometry(QRect(10, 300, 81, 91));
+        label_5 = new QLabel(centralWidget);
+        label_5->setObjectName(QStringLiteral("label_5"));
+        label_5->setGeometry(QRect(10, 280, 91, 17));
+        label_6 = new QLabel(centralWidget);
+        label_6->setObjectName(QStringLiteral("label_6"));
+        label_6->setGeometry(QRect(580, 110, 131, 21));
         Simulator->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(Simulator);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -127,6 +145,23 @@ public:
         label_2->setText(QApplication::translate("Simulator", "xRot", Q_NULLPTR));
         label_3->setText(QApplication::translate("Simulator", "yRot", Q_NULLPTR));
         label_4->setText(QApplication::translate("Simulator", "zRot", Q_NULLPTR));
+
+        const bool __sortingEnabled = listWidget->isSortingEnabled();
+        listWidget->setSortingEnabled(false);
+        QListWidgetItem *___qlistwidgetitem = listWidget->item(0);
+        ___qlistwidgetitem->setText(QApplication::translate("Simulator", "Bouncing", Q_NULLPTR));
+        QListWidgetItem *___qlistwidgetitem1 = listWidget->item(1);
+        ___qlistwidgetitem1->setText(QApplication::translate("Simulator", "Collision", Q_NULLPTR));
+        QListWidgetItem *___qlistwidgetitem2 = listWidget->item(2);
+        ___qlistwidgetitem2->setText(QApplication::translate("Simulator", "Bursting", Q_NULLPTR));
+        QListWidgetItem *___qlistwidgetitem3 = listWidget->item(3);
+        ___qlistwidgetitem3->setText(QApplication::translate("Simulator", "Rolling", Q_NULLPTR));
+        QListWidgetItem *___qlistwidgetitem4 = listWidget->item(4);
+        ___qlistwidgetitem4->setText(QApplication::translate("Simulator", "Rotating", Q_NULLPTR));
+        listWidget->setSortingEnabled(__sortingEnabled);
+
+        label_5->setText(QApplication::translate("Simulator", "Select Action:", Q_NULLPTR));
+        label_6->setText(QApplication::translate("Simulator", "Adjust Orientation:", Q_NULLPTR));
     } // retranslateUi
 
 };

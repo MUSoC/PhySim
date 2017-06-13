@@ -216,6 +216,7 @@ DIST          = ../../../../Qt5.9.0/5.9/gcc_64/mkspecs/features/spec_pre.prf \
 		../../../../Qt5.9.0/5.9/gcc_64/mkspecs/features/qt_config.prf \
 		../../../../Qt5.9.0/5.9/gcc_64/mkspecs/linux-g++/qmake.conf \
 		../../../../Qt5.9.0/5.9/gcc_64/mkspecs/features/spec_post.prf \
+		../Simulator/.qmake.stash \
 		../../../../Qt5.9.0/5.9/gcc_64/mkspecs/features/exclusive_builds.prf \
 		../../../../Qt5.9.0/5.9/gcc_64/mkspecs/features/toolchain.prf \
 		../../../../Qt5.9.0/5.9/gcc_64/mkspecs/features/default_pre.prf \
@@ -408,6 +409,7 @@ Makefile: ../Simulator/Simulator.pro ../../../../Qt5.9.0/5.9/gcc_64/mkspecs/linu
 		../../../../Qt5.9.0/5.9/gcc_64/mkspecs/features/qt_config.prf \
 		../../../../Qt5.9.0/5.9/gcc_64/mkspecs/linux-g++/qmake.conf \
 		../../../../Qt5.9.0/5.9/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../../Qt5.9.0/5.9/gcc_64/mkspecs/features/exclusive_builds.prf \
 		../../../../Qt5.9.0/5.9/gcc_64/mkspecs/features/toolchain.prf \
 		../../../../Qt5.9.0/5.9/gcc_64/mkspecs/features/default_pre.prf \
@@ -592,6 +594,7 @@ Makefile: ../Simulator/Simulator.pro ../../../../Qt5.9.0/5.9/gcc_64/mkspecs/linu
 ../../../../Qt5.9.0/5.9/gcc_64/mkspecs/features/qt_config.prf:
 ../../../../Qt5.9.0/5.9/gcc_64/mkspecs/linux-g++/qmake.conf:
 ../../../../Qt5.9.0/5.9/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../../Qt5.9.0/5.9/gcc_64/mkspecs/features/exclusive_builds.prf:
 ../../../../Qt5.9.0/5.9/gcc_64/mkspecs/features/toolchain.prf:
 ../../../../Qt5.9.0/5.9/gcc_64/mkspecs/features/default_pre.prf:
@@ -904,7 +907,16 @@ main.o: ../Simulator/main.cpp ../Simulator/simulator.h \
 		../../../../Qt5.9.0/5.9/gcc_64/include/QtCore/qeventloop.h \
 		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt5.9.0/5.9/gcc_64/include/QtGui/qguiapplication.h \
-		../../../../Qt5.9.0/5.9/gcc_64/include/QtGui/qinputmethod.h
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtGui/qinputmethod.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/QOpenGLWidget \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qopenglwidget.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/QWidget \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtGui/QSurfaceFormat \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtGui/qsurfaceformat.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtGui/qopengl.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtCore/qt_windows.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtGui/qopengles2ext.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtGui/qopenglext.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../Simulator/main.cpp
 
 simulator.o: ../Simulator/simulator.cpp ../Simulator/simulator.h \
@@ -1011,7 +1023,61 @@ simulator.o: ../Simulator/simulator.cpp ../Simulator/simulator.h \
 		../../../../Qt5.9.0/5.9/gcc_64/include/QtGui/qtouchdevice.h \
 		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qtabwidget.h \
 		../../../../Qt5.9.0/5.9/gcc_64/include/QtGui/qicon.h \
-		ui_simulator.h
+		ui_simulator.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtCore/QVariant \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/QAction \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qaction.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qactiongroup.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/QApplication \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qapplication.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtCore/qcoreapplication.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtCore/qeventloop.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qdesktopwidget.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtGui/qguiapplication.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtGui/qinputmethod.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/QButtonGroup \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qbuttongroup.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/QHeaderView \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qheaderview.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qframe.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qstyleoption.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtGui/qvalidator.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtCore/qregularexpression.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qslider.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qabstractslider.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qstyle.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qtabbar.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qrubberband.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/QLabel \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qlabel.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/QMenuBar \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qmenubar.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qmenu.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/QOpenGLWidget \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qopenglwidget.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/QWidget \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtGui/QSurfaceFormat \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtGui/qsurfaceformat.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtGui/qopengl.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtCore/qt_windows.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtGui/qopengles2ext.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtGui/qopenglext.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/QPushButton \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qpushbutton.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qabstractbutton.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/QRadioButton \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qradiobutton.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/QSlider \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/QStatusBar \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qstatusbar.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/QToolBar \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qtoolbar.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o simulator.o ../Simulator/simulator.cpp
 
 moc_simulator.o: moc_simulator.cpp 

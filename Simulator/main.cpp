@@ -1,5 +1,6 @@
 #include "simulator.h"
 #include <QApplication>
+#include <QOpenGLWidget>
 
 int main(int argc, char *argv[])
 {
