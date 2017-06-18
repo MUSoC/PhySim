@@ -17,7 +17,7 @@ There are two basic ways to build and run the project:
 
 ## 2. Using Terminal:
 
-	**For running via terminal, the first step would be to create a MakeFile**
+	** For running via terminal, the first step would be to create a MakeFile **
 	
 	--> Move into the directory containing the file simulator.cpp
 	--> While in this directory, a Qt project can be created by the command:
@@ -31,10 +31,10 @@ There are two basic ways to build and run the project:
 
 	This would create a MakeFile in the particular directory.
 
-	**Now the program can be compiled by using the command:**
+	** Now the program can be compiled by using the command: **
 		$ make
 
-	**Execution of the program**
+	** Execution of the program **
 
 		After running the previous command, an executable file by the name of "Simulator" in the directory.
 		To run it, use the following command.
