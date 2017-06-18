@@ -17,6 +17,7 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QOpenGLWidget>
 #include <QtWidgets/QPushButton>
@@ -31,6 +32,11 @@ QT_BEGIN_NAMESPACE
 class Ui_Simulator
 {
 public:
+    QAction *actionReset;
+    QAction *actionExport;
+    QAction *actionPlay;
+    QAction *actionStop;
+    QAction *actionQuit;
     QWidget *centralWidget;
     QPushButton *pushButton;
     QPushButton *pushButton_2;
@@ -49,6 +55,7 @@ public:
     QLabel *label_5;
     QLabel *label_6;
     QMenuBar *menuBar;
+    QMenu *menuFile;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
 
@@ -56,7 +63,34 @@ public:
     {
         if (Simulator->objectName().isEmpty())
             Simulator->setObjectName(QStringLiteral("Simulator"));
+        Simulator->setWindowModality(Qt::NonModal);
         Simulator->resize(715, 549);
+        actionReset = new QAction(Simulator);
+        actionReset->setObjectName(QStringLiteral("actionReset"));
+        actionReset->setEnabled(true);
+        QIcon icon;
+        icon.addFile(QStringLiteral("icons/undo.png"), QSize(), QIcon::Normal, QIcon::Off);
+        actionReset->setIcon(icon);
+        actionExport = new QAction(Simulator);
+        actionExport->setObjectName(QStringLiteral("actionExport"));
+        QIcon icon1;
+        icon1.addFile(QStringLiteral("icons/export.png"), QSize(), QIcon::Normal, QIcon::Off);
+        actionExport->setIcon(icon1);
+        actionPlay = new QAction(Simulator);
+        actionPlay->setObjectName(QStringLiteral("actionPlay"));
+        QIcon icon2;
+        icon2.addFile(QStringLiteral("icons/button_play_green.png"), QSize(), QIcon::Normal, QIcon::Off);
+        actionPlay->setIcon(icon2);
+        actionStop = new QAction(Simulator);
+        actionStop->setObjectName(QStringLiteral("actionStop"));
+        QIcon icon3;
+        icon3.addFile(QStringLiteral("icons/media_playback_stop.png"), QSize(), QIcon::Normal, QIcon::Off);
+        actionStop->setIcon(icon3);
+        actionQuit = new QAction(Simulator);
+        actionQuit->setObjectName(QStringLiteral("actionQuit"));
+        QIcon icon4;
+        icon4.addFile(QStringLiteral("icons/exit.png"), QSize(), QIcon::Normal, QIcon::Off);
+        actionQuit->setIcon(icon4);
         centralWidget = new QWidget(Simulator);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         pushButton = new QPushButton(centralWidget);
@@ -120,6 +154,9 @@ public:
         menuBar = new QMenuBar(Simulator);
         menuBar->setObjectName(QStringLiteral("menuBar"));
         menuBar->setGeometry(QRect(0, 0, 715, 22));
+        menuFile = new QMenu(menuBar);
+        menuFile->setObjectName(QStringLiteral("menuFile"));
+        menuFile->setEnabled(true);
         Simulator->setMenuBar(menuBar);
         mainToolBar = new QToolBar(Simulator);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -127,6 +164,16 @@ public:
         statusBar = new QStatusBar(Simulator);
         statusBar->setObjectName(QStringLiteral("statusBar"));
         Simulator->setStatusBar(statusBar);
+
+        menuBar->addAction(menuFile->menuAction());
+        menuFile->addAction(actionReset);
+        menuFile->addAction(actionExport);
+        menuFile->addAction(actionPlay);
+        menuFile->addAction(actionStop);
+        menuFile->addAction(actionQuit);
+        mainToolBar->addAction(actionPlay);
+        mainToolBar->addAction(actionStop);
+        mainToolBar->addAction(actionQuit);
 
         retranslateUi(Simulator);
 
@@ -136,6 +183,26 @@ public:
     void retranslateUi(QMainWindow *Simulator)
     {
         Simulator->setWindowTitle(QApplication::translate("Simulator", "Simulator", Q_NULLPTR));
+        actionReset->setText(QApplication::translate("Simulator", "Reset", Q_NULLPTR));
+#ifndef QT_NO_TOOLTIP
+        actionReset->setToolTip(QApplication::translate("Simulator", "Reset all the settings", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
+        actionExport->setText(QApplication::translate("Simulator", "Export", Q_NULLPTR));
+#ifndef QT_NO_TOOLTIP
+        actionExport->setToolTip(QApplication::translate("Simulator", "Export the animation as a video file", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
+        actionPlay->setText(QApplication::translate("Simulator", "Play", Q_NULLPTR));
+#ifndef QT_NO_TOOLTIP
+        actionPlay->setToolTip(QApplication::translate("Simulator", "Start the animation", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
+        actionStop->setText(QApplication::translate("Simulator", "Stop", Q_NULLPTR));
+#ifndef QT_NO_TOOLTIP
+        actionStop->setToolTip(QApplication::translate("Simulator", "Stop the animation", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
+        actionQuit->setText(QApplication::translate("Simulator", "Quit", Q_NULLPTR));
+#ifndef QT_NO_TOOLTIP
+        actionQuit->setToolTip(QApplication::translate("Simulator", "Quit the Simulator", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
         pushButton->setText(QApplication::translate("Simulator", "Stop", Q_NULLPTR));
         pushButton_2->setText(QApplication::translate("Simulator", "Start", Q_NULLPTR));
         radioButton->setText(QApplication::translate("Simulator", "Cube", Q_NULLPTR));
@@ -162,6 +229,7 @@ public:
 
         label_5->setText(QApplication::translate("Simulator", "Select Action:", Q_NULLPTR));
         label_6->setText(QApplication::translate("Simulator", "Adjust Orientation:", Q_NULLPTR));
+        menuFile->setTitle(QApplication::translate("Simulator", "File", Q_NULLPTR));
     } // retranslateUi
 
 };

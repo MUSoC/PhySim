@@ -33,3 +33,6 @@ HEADERS += \
 
 FORMS += \
         simulator.ui
+
+RESOURCES += \
+    resources.qrc

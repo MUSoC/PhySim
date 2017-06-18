@@ -12,3 +12,8 @@ Simulator::~Simulator()
 {
     delete ui;
 }
+
+void Simulator::on_actionQuit_triggered()
+{
+    QApplication::quit();
+}

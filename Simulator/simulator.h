@@ -15,6 +15,9 @@ public:
     explicit Simulator(QWidget *parent = 0);
     ~Simulator();
 
+private slots:
+    void on_actionQuit_triggered();
+
 private:
     Ui::Simulator *ui;
 };
