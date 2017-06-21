@@ -186,41 +186,6 @@
      <string>zRot</string>
     </property>
    </widget>
-   <widget class="QListWidget" name="listWidget">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>300</y>
-      <width>81</width>
-      <height>91</height>
-     </rect>
-    </property>
-    <item>
-     <property name="text">
-      <string>Bouncing</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Collision</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Bursting</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Rolling</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Rotating</string>
-     </property>
-    </item>
-   </widget>
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
@@ -245,6 +210,16 @@
     </property>
     <property name="text">
      <string>Adjust Orientation:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>300</y>
+      <width>86</width>
+      <height>25</height>
+     </rect>
     </property>
    </widget>
   </widget>
