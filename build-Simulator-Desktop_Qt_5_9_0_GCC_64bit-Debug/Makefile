@@ -1052,13 +1052,8 @@ simulator.o: ../Simulator/simulator.cpp ../Simulator/simulator.h \
 		../../../../Qt5.9.0/5.9/gcc_64/include/QtGui/qinputmethod.h \
 		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/QButtonGroup \
 		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qbuttongroup.h \
-		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/QHeaderView \
-		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qheaderview.h \
-		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qabstractitemview.h \
-		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qframe.h \
-		../../../../Qt5.9.0/5.9/gcc_64/include/QtCore/qabstractitemmodel.h \
-		../../../../Qt5.9.0/5.9/gcc_64/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/QComboBox \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qcombobox.h \
 		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
 		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qstyleoption.h \
 		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qabstractspinbox.h \
@@ -1069,11 +1064,15 @@ simulator.o: ../Simulator/simulator.cpp ../Simulator/simulator.h \
 		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qstyle.h \
 		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qtabbar.h \
 		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qrubberband.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qframe.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/QHeaderView \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qheaderview.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt5.9.0/5.9/gcc_64/include/QtCore/qitemselectionmodel.h \
 		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/QLabel \
 		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qlabel.h \
-		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/QListWidget \
-		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qlistwidget.h \
-		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qlistview.h \
 		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/QMenu \
 		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qmenu.h \
 		../../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/QMenuBar \

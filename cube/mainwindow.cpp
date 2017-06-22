@@ -46,7 +46,7 @@ void MyGLWidget::paintGL(){
     glBegin(GL_QUADS);
 
         //front
-        glColor3f(1.0,0.0,1.0);
+        glColor3f(1.0,0.0,0.0);
 
         glVertex3f(1.0,1.0,1.0);
         glVertex3f(-1.0,1.0,1.0);
@@ -56,7 +56,7 @@ void MyGLWidget::paintGL(){
 
         //back
 
-        //glColor3f(0.0,1.0,0.0);
+        glColor3f(0.0,1.0,0.0);
 
         glVertex3f(1.0,1.0,-1.0);
         glVertex3f(-1.0,1.0,-1.0);
@@ -65,7 +65,7 @@ void MyGLWidget::paintGL(){
 
 
         //top
-        //glColor3f(0.0,0.0,1.0);
+        glColor3f(0.0,0.0,1.0);
 
         glVertex3f(-1.0,1.0,1.0);
         glVertex3f(1.0,1.0,1.0);
@@ -74,7 +74,7 @@ void MyGLWidget::paintGL(){
 
 
         //bottom
-        //glColor3f(0.0,1.0,1.0);
+        glColor3f(0.0,1.0,1.0);
 
         glVertex3f(1.0,-1.0,1.0);
         glVertex3f(1.0,-1.0,-1.0);
@@ -82,7 +82,7 @@ void MyGLWidget::paintGL(){
         glVertex3f(-1.0,-1.0,1.0);
 
         //right
-        //glColor3f(1.0,0.0,1.0);
+        glColor3f(1.0,0.0,1.0);
 
         glVertex3f(1.0,1.0,1.0);
         glVertex3f(1.0,-1.0,1.0);
@@ -91,13 +91,12 @@ void MyGLWidget::paintGL(){
 
 
         //left
-        //glColor3f(1.0,1.0,0.0);
+        glColor3f(1.0,1.0,0.0);
 
         glVertex3f(-1.0,1.0,1.0);
         glVertex3f(-1.0,-1.0,1.0);
         glVertex3f(-1.0,-1.0,-1.0);
         glVertex3f(-1.0,1.0,-1.0);
-
 
     glEnd();
 
