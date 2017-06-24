@@ -43,7 +43,7 @@ void MyGLWidget::paintGL(){
 
 
     /* create 3D-Cube */
-    glBegin(GL_QUADS);
+        glBegin(GL_QUADS);
 
         //front
         glColor3f(1.0,0.0,0.0);
@@ -97,7 +97,6 @@ void MyGLWidget::paintGL(){
         glVertex3f(-1.0,-1.0,1.0);
         glVertex3f(-1.0,-1.0,-1.0);
         glVertex3f(-1.0,1.0,-1.0);
-
     glEnd();
 
-}
+        }
