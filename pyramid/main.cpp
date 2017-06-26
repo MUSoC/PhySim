@@ -8,6 +8,5 @@ int main(int argc, char *argv[])
     MyGLWidget w;
     w.resize(800,600);
     w.show();
-
     return a.exec();
 }

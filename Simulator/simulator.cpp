@@ -21,3 +21,4 @@ void Simulator::on_actionQuit_triggered()
 {
     QApplication::quit();
 }
+
