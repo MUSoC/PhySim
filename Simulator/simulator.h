@@ -18,6 +18,14 @@ public:
 private slots:
     void on_actionQuit_triggered();
 
+    void on_pushButton_clicked();
+
+    void on_pushButton_pressed();
+
+    void on_pushButton_clicked(bool checked);
+
+    void on_pushButton_2_clicked(bool checked);
+
 private:
     Ui::Simulator *ui;
 };
