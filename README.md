@@ -41,3 +41,9 @@ There are two basic ways to build and run the project:
 		To run it, use the following command.
 
 		$ ./Simulator 
+
+
+#Current Status:
+As of now, the current project can draw a cube, pyramid and a sphere
+rotation animations have been added but they are independent cpp files
+and not a part of the Qt projects.
