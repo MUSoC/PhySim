@@ -11,7 +11,7 @@ There are two basic ways to build and run the project:
 
 ## 1. Using Qt:
 
-	--> Open the Simulator.pro file directly (if the extension is associated via Qt) 
+	--> Open the PhySim.pro file directly (if the extension is associated via Qt) 
 		or load the project via Qt first.
 	--> Click on the Hammer icon (or use Ctrl+B) to build the project.
 	--> Now use the Run icon (or Ctrl+R) to run the project.
@@ -37,13 +37,11 @@ There are two basic ways to build and run the project:
 
 	Execution of the program
 
-		After running the previous command, an executable file by the name of "Simulator" in the directory.
+		After running the previous command, an executable file by the name of "PhySim" in the directory.
 		To run it, use the following command.
 
-		$ ./Simulator 
+		$ ./PhySim 
 
 
 #Current Status:
-As of now, the current project can draw a cube, pyramid and a sphere
-rotation animations have been added but they are independent cpp files
-and not a part of the Qt projects.
+Add/update the path of the x-executable files in the code for mywindow.cpp before running the program.
