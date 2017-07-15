@@ -1,9 +1,0 @@
-<RCC>
-    <qresource prefix="/rec">
-        <file>icons/button_play_green.png</file>
-        <file>icons/exit.png</file>
-        <file>icons/export.png</file>
-        <file>icons/media_playback_stop.png</file>
-        <file>icons/undo.png</file>
-    </qresource>
-</RCC>
