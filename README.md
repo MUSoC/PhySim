@@ -1,10 +1,8 @@
 # PhySim
 ## Project Details: 
 
-Creating a Physics Simulator using OpenGL.
-
-### MUSoC Proposal link: https://drive.google.com/file/d/0B58WlDabcUEZWkg1OUE3YzhnNW8/view
-
+It is a Qt created GUI project that consists of different simulations of simple shapes (5, for now), made via OpenGL.
+The user can select the desired option from the interface. 
 
 # Running The Project:
 There are two basic ways to build and run the project:
@@ -43,5 +41,20 @@ There are two basic ways to build and run the project:
 		$ ./PhySim 
 
 
-#Current Status:
-Add/update the path of the x-executable files in the code for mywindow.cpp before running the program.
+## Building and compilation (Ubuntu):
+		the animation_builds folder contains the code for the different animations in addition to the Build executables. If you wish to do it yourself, you can do so by using running the following in the terminal:
+				$ g++ filename.cpp -o outputname -lGL -lGLU -lglut
+
+		You can refer to the following for additional help:
+				http://goanna.cs.rmit.edu.au/~gl/teaching/Interactive3D/2012/compiling.html
+
+## Before running the project:
+		Make sure to update the location of the build executable for all the animations under mainwindow.cpp by editing the following code, or it could cause the program to not run properly:
+
+			void MainWindow::on_pushButton_clicked()
+				{
+				    QString file = "Insert location of executable here";
+				    QProcess::startDetached(file);
+				}
+
+
