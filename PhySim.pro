@@ -1,16 +1,16 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2017-06-12T14:04:30
+# Project created by QtCreator 2017-07-14T05:07:20
 #
 #-------------------------------------------------
 
 QT       += core gui
-QT         += widgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = Simulator
+TARGET = PhySim
 TEMPLATE = app
+INCLUDEPATH += .
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked as deprecated (the exact warnings
@@ -26,13 +26,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        simulator.cpp
+        mainwindow.cpp
 
 HEADERS += \
-        simulator.h
+        mainwindow.h
 
 FORMS += \
-        simulator.ui
-
-RESOURCES += \
-    resources.qrc
+        mainwindow.ui

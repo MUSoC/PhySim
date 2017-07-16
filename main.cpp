@@ -1,11 +1,10 @@
-#include "simulator.h"
+#include "mainwindow.h"
 #include <QApplication>
-#include <QOpenGLWidget>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    Simulator w;
+    MainWindow w;
     w.show();
 
     return a.exec();
