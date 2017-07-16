@@ -34,12 +34,12 @@ glEnable(GL_NORMALIZE);
 void sphere()
 {
 glPushMatrix();
-glutSolidSphere(1.0,100,100);
+glutSolidSphere(0.50,100,100);
 glPopMatrix();
 }
 static GLfloat theta[]={0.0,0.0,0.0};
 static GLint axis=2.0;
-static GLfloat translate[]={0.0,0.0,0.0};
+static GLfloat translate[]={-1.0,0.0,-1.0};
 
 void display()
 {
